@@ -79,7 +79,7 @@ header {
         color: var(--color-purple) !important;
     }
 
-    #burger-btn:not(:checked) ~ #header__header nav {
+    #burger-btn:not(:checked) ~ #header__content nav {
         display: none;
     }
 }
@@ -102,31 +102,30 @@ nav {
     color: var(--color-purple) !important;
 }
 
-/* Content of header
-    ============================= */
+/*** 2. HEADER ***/
 
-#header__content button {
+#section__hero button {
     background-color: var(--color-purple) !important;
     border-color: var(--color-purple)!important;
 }
 
-#header__content button:hover {
+#section__hero button:hover {
     opacity: 0.9;
 }
 
-#header__content h2 {
+#section__hero h2 {
     margin: 6rem 0;
 }
 
-#header__content h2 strong {
+#section__hero h2 strong {
     color: var(--color-purple);
 }
 
-#header__pros img {
+#section__hero-pros img {
     width: 90%;
 }
 
-#header__pros p {
+#section__hero-pros p {
     font-size: 1.4rem;
 }
 
@@ -136,11 +135,11 @@ nav {
         font-size: 4.5rem !important;
     }
 
-    #header__pros h3 {
+    #section__hero-pros h3 {
         font-size: 1.4rem;
     }
 
-    #header__pros p {
+    #section__hero-pros p {
         font-size: 1.1rem;
     }
 }
