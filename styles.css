@@ -26,6 +26,9 @@
     --color-purple: #C271FF;
     --font-family-base: "Source Sans Pro", sans-serif;
     --font-weight-bold: 700;
+    --font-size-paragraph: 1rem;
+    --font-size-heading-2: 2rem;
+    --font-size-heading-3: 1.2rem;
 }
 
 /* Bases
@@ -95,7 +98,7 @@ header {
     ============================= */
 
 nav {
-    font-size: 1rem;
+    font-size: var(--font-size-paragraph);
 }
 
 .nav-link:hover {
@@ -121,12 +124,8 @@ nav {
     color: var(--color-purple);
 }
 
-#section__hero-pros img {
-    width: 70%;
-}
-
-#section__hero-pros p {
-    font-size: 1.4rem;
+#section__hero-pros h3 {
+    font-size: var(--font-size-heading-3);
 }
 
 @media all and (max-width: 768px) {
@@ -134,24 +133,12 @@ nav {
     .display-1 {
         font-size: 4.5rem !important;
     }
-
-    #section__hero-pros h3 {
-        font-size: 1.4rem;
-    }
-
-    #section__hero-pros p {
-        font-size: 1.1rem;
-    }
 }
 
 /*** 4. SECTION CAROUSEL ***/
 
 #section__carousel {
     background-color: var(--color-purple);
-}
-
-#section__carousel img[alt^='profil'] {
-    width: 70%;
 }
 
 #section__carousel p {
@@ -162,14 +149,28 @@ nav {
     background-color: var(--color-purple);
 }
 
+#section__carousel img[alt^='profil'] {
+    margin-right: 5rem;
+}
+
 .section__carousel-paragraph {
     width: 50%;
+}
+
+@media all and (max-width: 768px) {
+    #section__carousel img[alt^='profil'] {
+        margin-right: 1rem;
+    }
 }
 
 @media all and (max-width: 576px) {
 
     #section__carousel img[alt$='icon'] {
         width: 50%;
+    }
+
+    #section__carousel a {
+        margin-bottom: 15rem;
     }
 
     .section__carousel-paragraph {
