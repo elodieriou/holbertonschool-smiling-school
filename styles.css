@@ -46,6 +46,14 @@ body {
     font-family: var(--font-family-base);
 }
 
+strong {
+    color: var(--color-purple);
+}
+
+button {
+    background-color: var(--color-purple) !important;
+    border-color: var(--color-purple)!important;
+}
 /*** 2. HEADER ***/
 
 /* Container
@@ -107,21 +115,12 @@ nav {
 
 /*** 3. SECTION HERO ***/
 
-#section__hero button {
-    background-color: var(--color-purple) !important;
-    border-color: var(--color-purple)!important;
-}
-
 #section__hero button:hover {
     opacity: 0.9;
 }
 
 #section__hero h2 {
     margin: 6rem 0;
-}
-
-#section__hero h2 strong {
-    color: var(--color-purple);
 }
 
 #section__hero-pros h3 {
@@ -180,23 +179,27 @@ nav {
 
 /*** 5. SECTION CAROUSEL TUTORIALS ***/
 
-#section__carousel-tutorials strong {
-    color: var(--color-purple);
-}
-
 #section__carousel-tutorials-sm img[alt='play'] {
     top: 3.5rem;
     left: 7rem;
 }
 
 #section__carousel-tutorials-md img[alt='play'] {
-    top: 4rem;
-    left: 9rem;
+    top: 3rem;
+    left: 6.5rem;
 }
 
 #section__carousel-tutorials-lg img[alt='play'] {
-    top: 4.5rem;
-    left: 10rem;
+    top: 3rem;
+    left: 7.5rem;
+}
+
+.section__carousel-tutorials-lg__item {
+    padding: 0 15rem;
+}
+
+.section__carousel-tutorials-mg__item {
+    padding: 0 5rem;
 }
 
 @media all and (max-width: 576px) {
@@ -205,3 +208,8 @@ nav {
     }
 }
 
+/*** 6. SECTION MEMBERSHIP ***/
+
+#section__membership {
+    background-color: var(--color-black);
+}
