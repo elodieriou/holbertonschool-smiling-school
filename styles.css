@@ -54,6 +54,7 @@ button {
     background-color: var(--color-purple) !important;
     border-color: var(--color-purple)!important;
 }
+
 /*** 2. HEADER ***/
 
 /* Container
@@ -156,6 +157,11 @@ nav {
     width: 50%;
 }
 
+.section__carousel-card {
+    width: 255px;
+    height: 385px;
+}
+
 @media all and (max-width: 768px) {
     #section__carousel img[alt^='profil'] {
         margin-right: 1rem;
@@ -179,17 +185,20 @@ nav {
 
 /*** 5. SECTION CAROUSEL TUTORIALS ***/
 
-#section__carousel-tutorials-sm img[alt='play'] {
+#section__carousel-tutorials-sm img[alt='play'],
+#section__carousel-latest-sm img[alt='play']{
     top: 3.5rem;
     left: 7rem;
 }
 
-#section__carousel-tutorials-md img[alt='play'] {
+#section__carousel-tutorials-md img[alt='play'],
+#section__carousel-latest-md img[alt='play']{
     top: 3rem;
     left: 6.5rem;
 }
 
-#section__carousel-tutorials-lg img[alt='play'] {
+#section__carousel-tutorials-lg img[alt='play'],
+#section__carousel-latest-lg img[alt='play']{
     top: 3rem;
     left: 7.5rem;
 }
@@ -212,4 +221,24 @@ nav {
 
 #section__membership {
     background-color: var(--color-black);
+}
+
+/*** 7. FOOTER ***/
+
+footer {
+    background-color: var(--color-black);
+}
+
+#footer__content {
+    padding: 0 10rem;
+}
+
+.footer__social {
+    font-size: 30px;
+}
+
+@media all and (max-width: 768px) {
+    #footer__content {
+        padding: 0 5rem;
+    }
 }
