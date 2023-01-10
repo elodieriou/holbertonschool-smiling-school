@@ -55,6 +55,11 @@ button {
     border-color: var(--color-purple)!important;
 }
 
+.card {
+    min-width: 265px;
+    max-height: 385px;
+}
+
 /*** 2. HEADER ***/
 
 /* Container
