@@ -135,7 +135,7 @@ nav {
     }
 }
 
-/*** 4. SECTION CAROUSEL ***/
+/*** 4. SECTION CAROUSEL PROS ***/
 
 #section__carousel {
     background-color: var(--color-purple);
@@ -145,7 +145,7 @@ nav {
     font-size: 1.5rem;
 }
 
-.carousel-item {
+#section__carousel .carousel-item {
     background-color: var(--color-purple);
 }
 
@@ -177,3 +177,31 @@ nav {
         width: 100%;
     }
 }
+
+/*** 5. SECTION CAROUSEL TUTORIALS ***/
+
+#section__carousel-tutorials strong {
+    color: var(--color-purple);
+}
+
+#section__carousel-tutorials-sm img[alt='play'] {
+    top: 3.5rem;
+    left: 7rem;
+}
+
+#section__carousel-tutorials-md img[alt='play'] {
+    top: 4rem;
+    left: 9rem;
+}
+
+#section__carousel-tutorials-lg img[alt='play'] {
+    top: 4.5rem;
+    left: 10rem;
+}
+
+@media all and (max-width: 576px) {
+    #section__carousel-tutorials-sm img[alt$='icon'] {
+        width: 50%;
+    }
+}
+
