@@ -24,6 +24,7 @@
     --color-white: #ffffff;
     --color-black: #071629;
     --color-purple: #C271FF;
+    --color-green: #82D24F;
     --font-family-base: "Source Sans Pro", sans-serif;
     --font-weight-bold: 700;
     --font-size-paragraph: 1rem;
@@ -65,8 +66,15 @@ button {
 /* Container
 ============================= */
 
-header {
+.header__homepage {
     background-image: url(images/pic_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 50%;
+}
+
+.header__price {
+    background-image: url(images/pic_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60% 50%;
@@ -117,7 +125,10 @@ nav {
 
 .nav-link:hover {
     color: var(--color-purple) !important;
+    border-bottom: 3px solid white;
 }
+
+
 
 /*** 3. SECTION HERO ***/
 
@@ -228,7 +239,37 @@ nav {
     background-color: var(--color-black);
 }
 
-/*** 7. FOOTER ***/
+/*** 7. SECTION PRICES ***/
+
+#section__price button {
+    min-width: 162px;
+    max-height: 44px;
+}
+
+#section__price button ~ p {
+    font-size: 2.75rem;
+}
+
+/*** 8. SECTION PRICES GRIDS ***/
+
+.section__price-grid__header p {
+    font-size: 0.75rem;
+}
+
+.section__price-grid__check {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.section__price-grid__check span {
+    color: var(--color-green);
+    font-size: 1.75rem;
+}
+
+.section__price-grid__check p {
+    font-size: 1.2rem;
+}
+
+/*** 9. FOOTER ***/
 
 footer {
     background-color: var(--color-black);
