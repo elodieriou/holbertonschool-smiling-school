@@ -26,6 +26,7 @@
     --color-purple: #C271FF;
     --color-green: #82D24F;
     --font-family-base: "Source Sans Pro", sans-serif;
+    --font-weight-light: 300;
     --font-weight-bold: 700;
     --font-size-paragraph: 1rem;
     --font-size-heading-2: 2rem;
@@ -269,7 +270,17 @@ nav {
     font-size: 1.2rem;
 }
 
-/*** 9. FOOTER ***/
+/*** 9. SECTION FAQ ***/
+
+#section__faq {
+    max-width: 920px;
+}
+
+#section__faq h2 {
+    font-size: 3.75rem;
+}
+
+/*** 10. FOOTER ***/
 
 footer {
     background-color: var(--color-black);
