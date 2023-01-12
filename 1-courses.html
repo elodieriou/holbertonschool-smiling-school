@@ -26,8 +26,7 @@
 <!-- Header -->
 <header class="header__courses">
     <div class="container-fluid p-4">
-        <!-- Header -->
-        <div class="d-flex px-5">
+        <div class="d-flex px-sm-5">
             <!-- Burger menu -->
             <input class="d-none" type="checkbox" id="burger-btn">
             <label class="d-block d-sm-none" id="burger-icon" for="burger-btn">
@@ -37,7 +36,7 @@
             <div id="header__content" class="w-100 d-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
                 <!-- Logo -->
                 <div>
-                    <a class="d-flex flex-column flex-sm-row align-items-center" href="#">
+                    <a class="d-flex flex-column flex-sm-row align-items-center" href="homepage.html">
                         <img src="images/smile_off.png" alt="SmileSchool logo" class="mb-3 mb-sm-0" width="40px" height="30px">
                         <img src="images/logo.png" alt="SmileSchool logo" class="ml-sm-3" width="115px" height="30px">
                     </a>
@@ -46,13 +45,13 @@
                 <nav class="position-relative">
                     <ul class="nav d-flex flex-column flex-sm-row align-items-center mt-3">
                         <li class="nav-item">
-                            <a href="#courses" class="nav-link text-white text-uppercase font-weight-bold p-0 m-4 pb-1">Courses</a>
+                            <a href="courses.html" class="nav-link text-white text-uppercase font-weight-bold on-page p-0 m-3 pb-1">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#pricing" class="nav-link text-white text-uppercase font-weight-bold p-0 m-4 pb-1">Pricing</a>
+                            <a href="pricing.html" class="nav-link text-white text-uppercase font-weight-bold p-0 m-3 pb-1">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#login" class="nav-link text-white text-uppercase font-weight-bold p-0 m-4 pb-1">Login</a>
+                            <a href="#login" class="nav-link text-white text-uppercase font-weight-bold p-0 m-3 pb-1">Login</a>
                         </li>
                     </ul>
                 </nav>
@@ -60,15 +59,16 @@
         </div>
         <!-- Section hero -->
         <section id="section__hero" class="w-100 d-flex flex-column justify-content-center align-items-center text-white mb-5">
-            <h1 class="d-none d-sm-block">« Don’t cry because it’s over.<br>
+            <h1 class="d-none d-sm-block font-family-courses">« Don’t cry because it’s over.<br>
                 <strong>Smile</strong> because it happened. »</h1>
         </section>
     </div>
 </header>
 <main>
-    <div id="section__filters" class="container-fluid p-4 text-white">
-        <div class="row px-5">
-            <div class="col-12 col-md-4 mb-4">
+    <!-- Section filters -->
+    <section id="section__filters" class="container-fluid p-4 text-white bg-purple">
+        <div class="row px-sm-5">
+            <div class="col-12 col-md-4 mb-4 pl-0">
                 <p class="font-size-small text-uppercase font-weight-bold mb-2">Keywords</p>
                 <div class="p-0 border-bottom">
                     <label class="sr-only" for="searchBar">Username</label>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 pr-0">
                 <p class="font-size-small text-uppercase font-weight-bold mb-2">Sort by</p>
                 <div class="dropdown height-filters">
                     <button class="col-12 btn btn-secondary dropdown-toggle bg-filters h-100 mb-0 border-bottom rounded-0 font-size-large text-left" type="button" data-toggle="dropdown">
@@ -107,7 +107,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </main>
 </body>
 </html>
