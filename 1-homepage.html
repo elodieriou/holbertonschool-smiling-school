@@ -24,9 +24,8 @@
 </head>
 <body>
 <!-- Header -->
-<header>
+<header class="header__homepage">
     <div class="container-fluid p-4">
-        <!-- Header -->
         <div id="header__container" class="d-flex px-5">
             <!-- Burger menu -->
             <input class="d-none" type="checkbox" id="burger-btn">
@@ -37,22 +36,22 @@
             <div id="header__content" class="w-100 d-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
                 <!-- Logo -->
                 <div>
-                    <a class="d-flex flex-column flex-sm-row align-items-center" href="#">
+                    <a class="d-flex flex-column flex-sm-row align-items-center" href="homepage.html">
                         <img src="images/smile_off.png" alt="SmileSchool logo" class="mb-3 mb-sm-0" width="40px" height="30px">
-                        <img src="images/logo.png" alt="SmileSchool logo" class="ml-sm-3" width="130px" height="30px">
+                        <img src="images/logo.png" alt="SmileSchool logo" class="ml-sm-3" width="115px" height="30px">
                     </a>
                 </div>
                 <!-- Nav bar -->
                 <nav class="position-relative">
                     <ul class="nav d-flex flex-column flex-sm-row align-items-center mt-3">
                         <li class="nav-item">
-                            <a href="#courses" class="nav-link text-white text-uppercase font-weight-bold">Courses</a>
+                            <a href="courses.html" class="nav-link text-white text-uppercase font-weight-bold p-0 m-3 pb-1">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#pricing" class="nav-link text-white text-uppercase font-weight-bold">Pricing</a>
+                            <a href="pricing.html" class="nav-link text-white text-uppercase font-weight-bold p-0 m-3 pb-1">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#login" class="nav-link text-white text-uppercase font-weight-bold">Login</a>
+                            <a href="#login" class="nav-link text-white text-uppercase font-weight-bold p-0 m-3 pb-1">Login</a>
                         </li>
                     </ul>
                 </nav>
@@ -66,7 +65,7 @@
                 <span class="mx-4">grin</span>
                 <span class="mx-4">laugh</span>
             </div>
-            <button class="text-uppercase btn btn-primary rounded-pill shadow my-3 px-3 py-2">Register for free</button>
+            <button class="text-uppercase btn btn-primary rounded-pill shadow opacity-btn my-3 px-3 py-2">Register for free</button>
             <h2><strong>Learn</strong> from the pros</h2>
             <div id="section__hero-pros" class="w-100 d-flex flex-column flex-sm-row justify-content-center">
                 <div class="w-100 row">
@@ -100,28 +99,32 @@
     </div>
 </header>
 <main>
-    <div id="section__carousel" class="container-fluid p-4">
-        <!-- Section carousel -->
+    <!-- Section carousel pros-->
+    <div id="section__carousel" class="container-fluid p-4 bg-purple">
         <section id="carousel-controls" class="carousel slide">
-            <div class="w-100 carousel-inner text-white mt-5">
-                <div class="carousel-item active d-flex flex-column flex-sm-row align-items-center justify-content-sm-center">
-                    <div class="d-flex justify-content-center">
-                        <img class="rounded-circle" src="images/profile_5.jpg" alt="profil testimonial" width="160px" height="160px">
-                    </div>
-                    <div class="section__carousel-paragraph mt-5">
-                        <p>&laquo Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun! &raquo</p>
-                        <p class="font-weight-bold">Person Name</p>
-                        <p class="font-italic">weather presenter</p>
+            <div class="w-100 carousel-inner text-white mt-5 mb-5">
+                <div class="carousel-item active bg-purple">
+                    <div class="d-flex flex-column flex-sm-row align-items-center justify-content-sm-center">
+                        <div class="d-flex justify-content-center">
+                            <img class="rounded-circle" src="images/profile_5.jpg" alt="profil testimonial" width="160px" height="160px">
+                        </div>
+                        <div class="section__carousel-paragraph font-size-large mt-3 ">
+                            <p>&laquo Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun! &raquo</p>
+                            <p class="font-weight-bold mb-0">Person Name</p>
+                            <p class="font-italic">weather presenter</p>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item d-flex flex-column flex-sm-row align-items-center justify-content-sm-center">
-                    <div class="d-flex justify-content-center">
-                        <img class="rounded-circle" src="images/profile_5.jpg" alt="profil testimonial" width="160px" height="160px">
-                    </div>
-                    <div class="section__carousel-paragraph mt-5">
-                        <p>&laquo Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun! &raquo</p>
-                        <p class="font-weight-bold mb-0">Person Name</p>
-                        <p class="font-italic">weather presenter</p>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column flex-sm-row align-items-center justify-content-sm-center">
+                        <div class="d-flex justify-content-center">
+                            <img class="rounded-circle" src="images/profile_5.jpg" alt="profil testimonial" width="160px" height="160px">
+                        </div>
+                        <div class="section__carousel-paragraph font-size-large mt-3">
+                            <p>&laquo Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun! &raquo</p>
+                            <p class="font-weight-bold mb-0">Person Name</p>
+                            <p class="font-italic">weather presenter</p>
+                        </div>
                     </div>
                 </div>
             </div>
