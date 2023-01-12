@@ -25,12 +25,22 @@
     --color-black: #071629;
     --color-purple: #C271FF;
     --color-green: #82D24F;
+    --color-transparent: rgba(255, 255, 255, 0.25);
+
     --font-family-base: "Source Sans Pro", sans-serif;
+    --font-family-courses: Coiny, sans-serif;
+
     --font-weight-light: 300;
     --font-weight-bold: 700;
-    --font-size-paragraph: 1rem;
+
+    --font-size-xs: 0.75rem;
+    --font-size-m: 1.2rem;
+    --font-size-l: 1.4rem;
+
     --font-size-heading-2: 2rem;
     --font-size-heading-3: 1.2rem;
+
+    --opacity-button: 0.9;
 }
 
 /* Bases
@@ -57,9 +67,37 @@ button {
     border-color: var(--color-purple)!important;
 }
 
-.card {
-    min-width: 265px;
-    max-height: 385px;
+.opacity-btn:hover {
+    opacity: var(--opacity-button);
+}
+
+.font-size-small {
+    font-size: var(--font-size-xs);
+}
+
+.font-size-medium {
+    font-size: var(--font-size-m);
+}
+
+.font-size-large {
+    font-size: var(--font-size-l);
+}
+
+.on-page {
+    color: var(--color-purple) !important;
+    border-bottom: 3px solid white;
+}
+
+.bg-purple {
+    background-color: var(--color-purple);
+}
+
+.bg-black {
+    background-color: var(--color-black);
+}
+
+.border-transparent {
+    border-color: var(--color-transparent);
 }
 
 /*** 2. HEADER ***/
@@ -80,6 +118,14 @@ button {
     background-size: cover;
     background-position: 60% 50%;
 }
+
+.header__courses {
+    background-image: url(images/pic_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 50%;
+}
+
 
 @media all and (max-width: 768px) {
     header {
@@ -120,21 +166,18 @@ button {
 /* Navbar
     ============================= */
 
-nav {
-    font-size: var(--font-size-paragraph);
-}
-
 .nav-link:hover {
     color: var(--color-purple) !important;
-    border-bottom: 3px solid white;
 }
-
-
 
 /*** 3. SECTION HERO ***/
 
 #section__hero button:hover {
     opacity: 0.9;
+}
+
+.font-family-courses {
+    font-family: var(--font-family-courses);
 }
 
 #section__hero h2 {
@@ -158,25 +201,12 @@ nav {
     background-color: var(--color-purple);
 }
 
-#section__carousel p {
-    font-size: 1.5rem;
-}
-
-#section__carousel .carousel-item {
-    background-color: var(--color-purple);
-}
-
 #section__carousel img[alt^='profil'] {
     margin-right: 5rem;
 }
 
 .section__carousel-paragraph {
     width: 50%;
-}
-
-.section__carousel-card {
-    width: 255px;
-    height: 385px;
 }
 
 @media all and (max-width: 768px) {
@@ -202,43 +232,29 @@ nav {
 
 /*** 5. SECTION CAROUSEL TUTORIALS ***/
 
-#section__carousel-tutorials-sm img[alt='play'],
-#section__carousel-latest-sm img[alt='play']{
-    top: 3.5rem;
-    left: 7rem;
+.smartphone-carousel img[alt$='icon'] {
+    width: 50%;
 }
 
-#section__carousel-tutorials-md img[alt='play'],
-#section__carousel-latest-md img[alt='play']{
-    top: 3rem;
-    left: 6.5rem;
+.fixed-size-card {
+    min-width: 265px;
+    max-height: 385px;
 }
 
-#section__carousel-tutorials-lg img[alt='play'],
-#section__carousel-latest-lg img[alt='play']{
-    top: 3rem;
-    left: 7.5rem;
+.position-play {
+    top: 10%;
+    left: 40%;
 }
 
-.section__carousel-tutorials-lg__item {
+.large-size-carousel-item {
     padding: 0 15rem;
 }
 
-.section__carousel-tutorials-mg__item {
+.medium-size-carousel-item {
     padding: 0 5rem;
 }
 
-@media all and (max-width: 576px) {
-    #section__carousel-tutorials-sm img[alt$='icon'] {
-        width: 50%;
-    }
-}
-
 /*** 6. SECTION MEMBERSHIP ***/
-
-#section__membership {
-    background-color: var(--color-black);
-}
 
 /*** 7. SECTION PRICES ***/
 
@@ -253,21 +269,9 @@ nav {
 
 /*** 8. SECTION PRICES GRIDS ***/
 
-.section__price-grid__header p {
-    font-size: 0.75rem;
-}
-
-.section__price-grid__check {
-    border-color: rgba(255, 255, 255, 0.2);
-}
-
-.section__price-grid__check span {
+.style-check {
     color: var(--color-green);
     font-size: 1.75rem;
-}
-
-.section__price-grid__check p {
-    font-size: 1.2rem;
 }
 
 /*** 9. SECTION FAQ ***/
@@ -280,15 +284,57 @@ nav {
     font-size: 3.75rem;
 }
 
-/*** 10. FOOTER ***/
+/*** 10. SECTION FILTERS ***/
 
-footer {
-    background-color: var(--color-black);
+#section__filters input:focus,
+#section__filters input:active,
+#section__filters button:focus,
+#section__filters button:active {
+    box-shadow: none;
 }
 
-#footer__content {
-    padding: 0 10rem;
+.bg-filters {
+    background-color: var(--color-transparent) !important;
 }
+
+::placeholder {
+    color: var(--color-transparent) !important;
+    font-size: var(--font-size-l);
+}
+
+.height-filters {
+    height: 51px;
+}
+
+.size-magnifying {
+    font-size: 1.5rem;
+}
+
+.rounded-corner-left {
+    border-top-left-radius: 4px !important;
+}
+
+.rounded-corner-right {
+    border-top-right-radius: 4px !important;
+}
+
+.dropdown button {
+    border-radius: 4px 4px 0 0 !important;
+}
+
+.dropdown-item:hover {
+    color: var(--color-purple) !important;
+    background-color: transparent;
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin-top: 0.8rem;
+}
+
+/*** 11. SECTION LIST COURSES ***/
+
+/*** 12. FOOTER ***/
 
 .footer__social {
     font-size: 30px;
